@@ -40,6 +40,7 @@ header .wrapper{
   font-size: 25px;
   margin-left: 20px;
   padding-top: 0px;
+  cursor: pointer;
 }
 .logo span{
   color: #f06c64;
@@ -55,7 +56,11 @@ nav li:last-child a{
 
 nav li{
   position:relative;
-  
+  cursor: pointer;
+}
+
+nav li:hover{
+  color: #f06c64;
 }
 nav li:not(:last-child):after {
   content: "·";
