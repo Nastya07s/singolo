@@ -106,11 +106,24 @@ nav li:not(:last-child):after {
   background: url('./assets/arrow.png');
 }
 
+.arrow-left:hover,
+.arrow-right:hover {
+  cursor: pointer;
+}
+
 .arrow-right {
   left: 22px;
 }
 
+.arrow-right:hover {
+  transform: scale(1.2);
+}
+
 .arrow-left {
   right: 21px;
-  transform: scale(-1, 1);
+  transform: rotate(180deg);
+}
+
+.arrow-left:hover {
+  transform: rotate(180deg) scale(1.2);;
 }
