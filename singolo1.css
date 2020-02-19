@@ -85,7 +85,16 @@ nav li:not(:last-child):after {
 }
 
 .horizontal-phone {
+  background: url('./assets/horizontal-shadow.png');
   margin-left: 74px;
+  padding-bottom: 22px;
+  padding-right: 25px;
+}
+
+.vertical-phone {
+  background: url('./assets/vertical-shadow.png');
+  padding-bottom: 22px;
+  padding-right: 25px;
 }
 
 .arrow-left,
