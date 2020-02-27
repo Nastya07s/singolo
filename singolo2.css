@@ -19,6 +19,23 @@ li {
 }
 
 .wrapper {
-  width: 980px;
+  width: 940px;
   margin: 0 auto;
+}
+
+.portfolio {
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+  color: white;
+}
+
+.portfolio h2{
+  padding-top: 60px;
+  font-weigth: bold;
+  font-size: 30px;
+}
+
+.portfolio .desc {
+  font-weight: 300;
+  margin-top: 24px;
 }
