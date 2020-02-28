@@ -166,6 +166,9 @@ li {
   background-color: black;
 }
 
+.human a svg{
+  fill: #666D89;
+}
 .human a:hover svg{
-  fill: white;
+  fill: #f2f2f2;
 } 
