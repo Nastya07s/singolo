@@ -58,6 +58,12 @@ li {
   padding: 4.3px 8px;
 }
 
+.portfolio button:hover{
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
 .portfolio button:nth-child(2){
   margin-left: -2px;
   padding-right: 4px;
@@ -155,3 +161,11 @@ li {
   padding-left: 8px;
   padding-top: 2px;
 }
+
+.human a:hover{
+  background-color: black;
+}
+
+.human a:hover svg{
+  fill: white;
+} 
