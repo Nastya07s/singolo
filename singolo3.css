@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+ol,
+ul,
+li {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
