@@ -132,3 +132,47 @@ textarea{
   content: url("./assets/mail.svg");
   padding-left: 0;
 }
+
+footer{
+  font-size: 12px;
+  background-color: #2d303a;
+  color: #666d89;
+  height: 100px;
+}
+
+footer .flex{
+  justify-content: space-between;
+}
+
+footer p{
+  padding-top: 30px;
+}
+
+.links a{
+      width: 32px;
+    height: 31px;
+    border: 1px solid #666d89;
+    -moz-border: 3px solid #666d89;
+    border-radius: 50%;
+    margin-top: 22px;
+    margin-right: 8px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.links a:hover{
+  background-color: black;
+  border-color: black;
+}
+
+.links a svg{
+  fill: #666d89;
+}
+
+.links a:hover svg{
+  fill: #f2f2f2;
+} 
+
+.links a:last-child{
+  margin-right: 0px;
+}
