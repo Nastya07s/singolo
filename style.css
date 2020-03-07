@@ -167,7 +167,7 @@ nav li:not(:last-child):after {
   padding-right: 12px
 }
 
-.services-item:nth-child(4){
+.services-item:nth-child(4) {
   margin-left: 0px;
 }
 
@@ -240,7 +240,7 @@ nav li:not(:last-child):after {
   color: #666d89;
 }
 
-.portfolio h2{
+.portfolio h2 {
   padding-top: 60px;
   font-size: 30px;
 }
@@ -252,12 +252,12 @@ nav li:not(:last-child):after {
   letter-spacing: 0.81px;
 }
 
-.portfolio .nav{
+.portfolio .nav {
   margin-top: 16px;
   margin-bottom: 18px;
 }
 
-.portfolio button{
+.portfolio button {
   font-family: 'Lato', sans-serif;
   font-size: 10px;
   letter-spacing: 0.5px;
@@ -269,42 +269,120 @@ nav li:not(:last-child):after {
   padding: 4.3px 8px;
 }
 
-.portfolio button:hover{
+.portfolio button:hover {
   cursor: pointer;
   border: 1px solid #ffffff;
   color: #ffffff;
 }
 
-.portfolio button:nth-child(2){
+.portfolio button:nth-child(2) {
   margin-left: -2px;
   padding-right: 4px;
   letter-spacing: 1.05px;
 }
 
-.portfolio button:nth-child(3){
+.portfolio button:nth-child(3) {
   letter-spacing: 0.8px;
   padding-right: 6px;
 }
 
-.portfolio button:nth-child(4){
+.portfolio button:nth-child(4) {
   padding-left: 6px;
   padding-right: 5px;
   letter-spacing: 1px;
 }
 
-.examples{
-  flex-wrap:wrap;
+.examples {
+  flex-wrap: wrap;
   margin-bottom: 46px;
 }
-.example{
+
+.example {
   margin-right: 20px;
   margin-bottom: 2px;
   padding-bottom: 15px;
 }
 
-.example:nth-child(4n){
+.example:nth-child(4n) {
   margin-right: 0px;
 }
-.example:nth-child(n+13){
-  display:none;
+
+.example:nth-child(n+13) {
+  display: none;
+}
+
+.about-us {
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+  color: #666d89;
+  font-size: 20px;
+  padding-bottom: 72px;
+}
+
+.about-us h2 {
+  padding-top: 60px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.about-us p {
+  color: #767e9e;
+  font-weight: 200;
+  text-align: justify;
+  text-align-last: left;
+  letter-spacing: -0.04px;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 44px;
+}
+
+.about-us p span {
+  word-spacing: 0.3px;
+}
+
+.people {
+  justify-content: space-between;
+
+}
+
+.human {
+  margin-right: 20px;
+}
+
+.human .name {
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 17.86px;
+  font-weight: 900;
+}
+
+.human .desc {
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 21.46px;
+  letter-spacing: 0.08px;
+}
+
+.human a {
+  width: 32px;
+  height: 31px;
+  border: 1px solid #666d89;
+  -moz-border: 3px solid #666d89;
+  border-radius: 50%;
+  margin-top: -18px;
+  margin-right: 8px;
+  padding-left: 8px;
+  padding-top: 2px;
+}
+
+.human a:hover {
+  background-color: black;
+}
+
+.human a svg {
+  fill: #666D89;
+}
+
+.human a:hover svg {
+  fill: #f2f2f2;
 }
