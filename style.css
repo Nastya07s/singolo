@@ -422,16 +422,17 @@ textarea::placeholder {
   -webkit-line-height: 22px;
   color: #f48c8f;
   font-family: "Lato", sans-serif;
-  padding-top: 8px;
 }
 
 textarea {
+  font-family: "Lato", sans-serif;
   background-color: #d6564f;
   border: none;
   border-radius: 7px;
   width: 620px;
   height: 204px;
   padding-left: 15px;
+  padding-top: 11px;
   resize: none;
 }
 
