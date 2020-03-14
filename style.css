@@ -71,7 +71,7 @@ nav li {
   cursor: pointer;
 }
 
-nav li:hover {
+.link-active {
   color: #f06c64;
 }
 
