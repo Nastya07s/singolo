@@ -58,11 +58,11 @@ header .wrapper {
   margin-left: 1px;
 }
 
-nav li a {
+nav li {
   margin-right: 32px;
 }
 
-nav li:last-child a {
+nav li:last-child {
   margin-right: 0px;
 }
 
@@ -78,13 +78,14 @@ nav li {
 nav li:not(:last-child):after {
   content: "·";
   position: absolute;
-  right: 14px;
+  right: -14,5px;
   color: #404455;
 }
 
 .slider {
   background: #f06c64;
   border-bottom: 6px solid #ea676b;
+  transition: all 1s;
 }
 
 .slider .wrapper {
@@ -94,6 +95,8 @@ nav li:not(:last-child):after {
 .slider-item {
   align-items: center;
   padding: 53px 0px 58px 73px;
+  justify-content: center;
+  position: relative;
 }
 
 .horizontal-phone {
@@ -107,6 +110,29 @@ nav li:not(:last-child):after {
   background: url('./assets/vertical-shadow.png');
   padding-bottom: 22px;
   padding-right: 25px;
+}
+
+.slider-item:nth-child(2) {
+  padding-top: 40px;
+  padding-bottom: 38px;
+}
+
+.forefront{
+  z-index: 1
+}
+
+.wayside{
+  position: absolute;
+  top: 152px;
+  z-index: 0;
+}
+
+.wayside:nth-child(1){
+  left: 247px;
+}
+
+.wayside:nth-child(3){
+  right: 175px;
 }
 
 .arrow-left,
