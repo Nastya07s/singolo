@@ -1,7 +1,7 @@
 const nav = document.getElementById('nav');
 
 nav.addEventListener('click', (event) => {
-  nav.querySelectorAll('li').forEach(i => {
+  nav.querySelectorAll('a').forEach(i => {
     if (event.target !== i)
       i.classList.remove('link-active');
     else
@@ -75,4 +75,53 @@ gallery.addEventListener('click', (event) => {
     else
       i.classList.add('example-active');
   })
+});
+
+const form = document.getElementById('form');
+const buttonSubmit = form.querySelector('input[type=submit]');
+form.addEventListener('submit', event => event.preventDefault());
+buttonSubmit.addEventListener('click', (event) => {
+  const inputs = form.querySelectorAll('input:not([type="submit"])');
+  if (!inputs[0].checkValidity() || !inputs[1].checkValidity()) {
+    return;
+  };
+  let modal = document.querySelector('.modal');
+  let modalContent = document.querySelector('.modal .content');
+  let formTextarea = form.querySelector('textarea');
+  let modalDesc = document.querySelector('#desc');
+
+  modal.style.display = 'block';
+  modal.querySelector('#subject').innerText = inputs[2].value === '' ? 'Без темы' : `Тема: ${inputs[2].value}`;
+  modalDesc.innerText = formTextarea.value === '' ? 'Без описания' : `Описание: ${formTextarea.value}`;
+  modal.querySelector('button').addEventListener('click', () => {
+    modal.style.display = 'none';
+    inputs.forEach(input => {
+      input.value = "";
+    });
+    formTextarea.value = "";
+  })
+  modalDesc.style.height = '60%';
+  if (formTextarea.value.length = 0) {
+    modalDesc.style.height = '45px';
+  } else if (formTextarea.value.length <= 100) {
+    modalContent.style.width = '300px';
+    modalContent.style.height = '202px';
+  } else
+  if (formTextarea.value.length > 101 && formTextarea.value.length <= 401) {
+    modalContent.style.width = '410px';
+    modalContent.style.height = '300px';
+  } else
+
+  if (formTextarea.value.length >= 402 && formTextarea.value.length < 601) {
+    // modalDesc.style.height = 'auto';
+
+    modalContent.style.width = '440px';
+    modalContent.style.height = '370px';
+  } else
+
+  if (formTextarea.value.length >= 601) {
+    modalDesc.style.height = '70%';
+    modalContent.style.width = '520px';
+    modalContent.style.height = '450px';
+  }
 })

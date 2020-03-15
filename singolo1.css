@@ -68,10 +68,10 @@ nav li:hover {
   color: #f06c64;
 }
 
-nav li:not(:last-child):after {
+nav a:not(:last-child):after {
   content: "·";
   position: absolute;
-  right: 14px;
+  right: -14px;
   color: #404455;
 }
 
