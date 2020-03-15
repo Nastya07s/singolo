@@ -40,7 +40,29 @@ arrowRight.addEventListener('click', () => changeSlide());
 const switchScreen = (el) => el.style.zIndex == 2 ? el.style.zIndex = '-1' : el.style.zIndex = '2';
 
 const verticalButton = document.querySelector('.vertical-phone__button');
-verticalButton.addEventListener('click', () => switchScreen(document.querySelector('.vertical-phone__off')))
+verticalButton.addEventListener('click', () => switchScreen(document.querySelector('.vertical-phone__off')));
 
 const horizontalButton = document.querySelector('.horizontal-phone__button');
-horizontalButton.addEventListener('click', () => switchScreen(document.querySelector('.horizontal-phone__off')))
+horizontalButton.addEventListener('click', () => switchScreen(document.querySelector('.horizontal-phone__off')));
+
+const navButtons = document.querySelector('.nav');
+const button = navButtons.querySelectorAll('button');
+
+button.forEach(i => {
+  i.addEventListener('click', () => {
+    let gallery = document.querySelector('.examples');
+    let pictures = Array.from(gallery.querySelectorAll('.example'));
+    pictures = pictures.sort(() => Math.random() - 0.5);
+    gallery.innerHTML = "";
+    pictures.forEach(pic => gallery.append(pic))
+  })
+})
+
+navButtons.addEventListener('click', (event) => {
+  button.forEach(i => {
+    if (event.target !== i)
+      i.classList.remove('button-active');
+    else
+      i.classList.add('button-active');
+  });
+})
