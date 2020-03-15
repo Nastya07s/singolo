@@ -104,12 +104,58 @@ nav li:not(:last-child):after {
   margin-left: 73px;
   padding-bottom: 21px;
   padding-right: 25px;
+  position: relative;
 }
 
 .vertical-phone {
   background: url('./assets/vertical-shadow.png');
   padding-bottom: 22px;
   padding-right: 25px;
+  position: relative;
+}
+
+.vertical-phone__button{
+  position: absolute;
+  height: 41.48px;
+  width: 41.48px;
+  border-radius: 50%;
+  background-color: transparent;
+  bottom: 35px;
+  left: 85px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.vertical-phone__off{
+  position: absolute;
+  width: 188px;
+  height: 334px;
+  background-color: #000;
+  bottom: 85px;
+  left: 14px;
+  z-index: -1;
+}
+
+.horizontal-phone__button{
+  position: absolute;
+  height: 41.48px;
+  width: 41.48px;
+  border-radius: 50%;
+  background-color: transparent;
+  bottom: 110px;
+  left: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.horizontal-phone__off{
+  position: absolute;
+  width: 334px;
+  height: 191px;
+  background-color: #000;
+  bottom: 35px;
+  left: 60px;
+  z-index: -1;
 }
 
 .slider-item:nth-child(2) {
