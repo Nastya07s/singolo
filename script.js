@@ -66,3 +66,13 @@ navButtons.addEventListener('click', (event) => {
       i.classList.add('button-active');
   });
 })
+
+const gallery = document.querySelector('.examples');
+gallery.addEventListener('click', (event) => {
+  gallery.querySelectorAll('.example').forEach(i => {
+    if (event.target.parentNode !== i)
+      i.classList.remove('example-active');
+    else
+      i.classList.add('example-active');
+  })
+})

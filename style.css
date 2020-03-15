@@ -78,7 +78,7 @@ nav li {
 nav li:not(:last-child):after {
   content: "·";
   position: absolute;
-  right: -14,5px;
+  right: -14, 5px;
   color: #404455;
 }
 
@@ -114,7 +114,7 @@ nav li:not(:last-child):after {
   position: relative;
 }
 
-.vertical-phone__button{
+.vertical-phone__button {
   position: absolute;
   height: 41.48px;
   width: 41.48px;
@@ -126,7 +126,7 @@ nav li:not(:last-child):after {
   cursor: pointer;
 }
 
-.vertical-phone__off{
+.vertical-phone__off {
   position: absolute;
   width: 188px;
   height: 334px;
@@ -136,7 +136,7 @@ nav li:not(:last-child):after {
   z-index: -1;
 }
 
-.horizontal-phone__button{
+.horizontal-phone__button {
   position: absolute;
   height: 41.48px;
   width: 41.48px;
@@ -148,7 +148,7 @@ nav li:not(:last-child):after {
   cursor: pointer;
 }
 
-.horizontal-phone__off{
+.horizontal-phone__off {
   position: absolute;
   width: 334px;
   height: 191px;
@@ -163,21 +163,21 @@ nav li:not(:last-child):after {
   padding-bottom: 38px;
 }
 
-.forefront{
+.forefront {
   z-index: 1
 }
 
-.wayside{
+.wayside {
   position: absolute;
   top: 152px;
   z-index: 0;
 }
 
-.wayside:nth-child(1){
+.wayside:nth-child(1) {
   left: 247px;
 }
 
-.wayside:nth-child(3){
+.wayside:nth-child(3) {
   right: 175px;
 }
 
@@ -294,7 +294,7 @@ nav li:not(:last-child):after {
   margin-left: 13px;
 }
 
-.services-info{
+.services-info {
   height: 95px;
   overflow: hidden;
 }
@@ -374,8 +374,12 @@ nav li:not(:last-child):after {
 
 .example {
   margin-right: 20px;
-  margin-bottom: 2px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.example-active {
+  outline: 5px solid #F06C64;
+  outline-offset: -5px;
 }
 
 .example:nth-child(4n) {
