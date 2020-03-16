@@ -113,8 +113,6 @@ buttonSubmit.addEventListener('click', (event) => {
   } else
 
   if (formTextarea.value.length >= 402 && formTextarea.value.length < 601) {
-    // modalDesc.style.height = 'auto';
-
     modalContent.style.width = '440px';
     modalContent.style.height = '370px';
   } else
