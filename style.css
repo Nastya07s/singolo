@@ -569,24 +569,24 @@ textarea {
   padding-left: 0;
 }
 
-.modal{
+.modal {
   display: none;
   position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0009;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0009;
 }
 
 .modal .content {
   position: absolute;
-   margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   border-radius: 7px;
   width: 300px;
   height: 172px;
@@ -594,11 +594,11 @@ textarea {
   padding: 15px;
 }
 
-.modal .content p{
+.modal .content p {
   padding-bottom: 20px;
 }
 
-.modal .content #desc{
+.modal .content #desc {
   height: 60%;
   word-wrap: wrap;
   word-break: break-all;
@@ -606,18 +606,25 @@ textarea {
   overflow-x: hidden;
 }
 
-.modal .content p:first-child{
+.modal .content p:first-child {
   font-weight: bold;
-  color:#767e9e;
+  color: #767e9e;
 }
 
-.modal .content button{
+.modal .content p:nth-child(2) {
+  height: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modal .content button {
   border: 2px solid #f48c8f;
   background-color: transparent;
   padding: 2px 5px;
   position: absolute;
-    bottom: 20px;
-    right: 20px;
+  bottom: 20px;
+  right: 20px;
   cursor: pointer;
 }
 
