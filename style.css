@@ -81,6 +81,7 @@ nav a {
 
 .link-active {
   color: #f06c64;
+  transition: color 0.2s linear;
 }
 
 nav a:not(:last-child):after {
@@ -225,7 +226,7 @@ nav a:not(:last-child):after {
 }
 
 .services {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 95px;
   color: #666d89;
   height: 500px;
   border-bottom: 6px solid #fff;
@@ -325,7 +326,7 @@ nav a:not(:last-child):after {
 }
 
 .portfolio {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 94px;
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
   color: #666d89;
@@ -472,7 +473,7 @@ nav a:not(:last-child):after {
 }
 
 .quote {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 94px;
   background-color: #f06c64;
   color: #f0cac9;
   border-bottom: 6px solid #ea676b;
