@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 ol,
@@ -33,6 +34,11 @@ li {
 }
 
 header {
+  height: 95px;
+  top: 0;
+  z-index: 9;
+  position: fixed;
+  width: 100%;
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
 }
@@ -87,6 +93,7 @@ nav a:not(:last-child):after {
 .slider {
   background: #f06c64;
   border-bottom: 6px solid #ea676b;
+  padding-top: 95px;
   transition: all 1s;
 }
 
@@ -218,6 +225,7 @@ nav a:not(:last-child):after {
 }
 
 .services {
+  scroll-margin-top: 96px;
   color: #666d89;
   height: 500px;
   border-bottom: 6px solid #fff;
@@ -317,6 +325,7 @@ nav a:not(:last-child):after {
 }
 
 .portfolio {
+  scroll-margin-top: 96px;
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
   color: #666d89;
@@ -393,6 +402,7 @@ nav a:not(:last-child):after {
 }
 
 .about-us {
+  scroll-margin-top: 96px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
   color: #666d89;
@@ -462,6 +472,7 @@ nav a:not(:last-child):after {
 }
 
 .quote {
+  scroll-margin-top: 96px;
   background-color: #f06c64;
   color: #f0cac9;
   border-bottom: 6px solid #ea676b;

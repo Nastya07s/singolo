@@ -1,3 +1,22 @@
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event){
+  const curPos = window.scrollY+106;
+  const divs = document.querySelectorAll('main > section > div');
+  const links = document.querySelectorAll('nav a');
+
+  divs.forEach((el) => {
+    if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
+      links.forEach((a) => {      
+        a.classList.remove('link-active');
+        if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+          a.classList.add('link-active');
+        }
+      })
+    }
+  });
+}
+
 const nav = document.getElementById('nav');
 
 nav.addEventListener('click', (event) => {
@@ -7,7 +26,7 @@ nav.addEventListener('click', (event) => {
     else
       i.classList.add('link-active');
   });
-})
+});
 
 const slider = document.getElementById('slider');
 const slides = document.querySelectorAll('.slider-item');
