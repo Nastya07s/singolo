@@ -1,15 +1,15 @@
 document.addEventListener('scroll', onScroll);
 
-function onScroll(event){
-  const curPos = window.scrollY+106;
+function onScroll(event) {
+  const curPos = window.scrollY + 106;
   const divs = document.querySelectorAll('main > section > div');
   const links = document.querySelectorAll('nav a');
 
   divs.forEach((el) => {
-    if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
-      links.forEach((a) => {      
+    if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+      links.forEach((a) => {
         a.classList.remove('link-active');
-        if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
           a.classList.add('link-active');
         }
       })
@@ -71,9 +71,15 @@ button.forEach(i => {
   i.addEventListener('click', () => {
     let gallery = document.querySelector('.examples');
     let pictures = Array.from(gallery.querySelectorAll('.example'));
-    pictures = pictures.sort(() => Math.random() - 0.5);
+    let temp = [];
+    for (i = 0; i < pictures.length-1; i++) {
+      temp.push(pictures[i + 1]);
+      if (i === pictures.length - 2) {
+        temp.push(pictures[0])
+      }
+    }
     gallery.innerHTML = "";
-    pictures.forEach(pic => gallery.append(pic))
+    temp.forEach(pic => gallery.append(pic))
   })
 })
 
