@@ -853,3 +853,38 @@ footer p {
 
 }
 
+@media only screen and (max-width: 767px) {
+    .slider-item{
+        min-width: 300px;
+    }
+
+    .horizontal-phone {
+        margin-left: 15px;
+        margin-right: 12px;
+    }
+
+    .slider-item {
+        padding: 23px 20px;
+        padding-right: 0px;
+        min-width: 280px;
+    }
+
+    .example img {
+        width: 120px;
+    }
+
+    .example:nth-child(n) {
+        margin-right: 14px;
+        margin-bottom: 14px;
+    }
+
+    .example:nth-child(2n) {
+        margin-right: 0px;
+    }
+
+    .human{
+        width: 264px;
+        margin-bottom: 34px;
+    }
+}
+
