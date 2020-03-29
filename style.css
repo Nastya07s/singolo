@@ -130,19 +130,19 @@ nav a:not(:last-child):after {
     width: 41.48px;
     border-radius: 50%;
     background-color: transparent;
-    bottom: 35px;
-    left: 85px;
+    bottom: 36px;
+    left: 86px;
     z-index: 1;
     cursor: pointer;
 }
 
 .vertical-phone__off {
     position: absolute;
-    width: 188px;
+    width: 189px;
     height: 334px;
     background-color: #000;
-    bottom: 85px;
-    left: 14px;
+    bottom: 88px;
+    left: 13px;
     z-index: -1;
 }
 
@@ -152,8 +152,8 @@ nav a:not(:last-child):after {
     width: 41.48px;
     border-radius: 50%;
     background-color: transparent;
-    bottom: 110px;
-    left: 10px;
+    bottom: 135px;
+    left: 9px;
     z-index: 1;
     cursor: pointer;
 }
@@ -163,7 +163,7 @@ nav a:not(:last-child):after {
     width: 334px;
     height: 191px;
     background-color: #000;
-    bottom: 35px;
+    bottom: 60px;
     left: 60px;
     z-index: -1;
 }
